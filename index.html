@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vending Machine</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Vending Machine</h1>
+  <form id="vendingForm">
+    <h2>1. Enter Amount Due</h2>
+    <p>
+      <label for="amountDue">Amount Due $</label>
+      <input type="number" id="amountDue" min="0" step="0.01"/>
+    </p>
+    <h2>2. Insert Coins</h2>
+    <p class="instructions">
+      Click coins to add money.
+    </p>
+    <ul id="coins">
+      <li><button type="button" data-type="quarter">Quarter</button></li>
+      <li><button type="button" data-type="dime">Dime</button></li>
+      <li><button type="button" data-type="nickel">Nickel</button></li>
+      <li><button type="button" data-type="penny">Penny</button></li>
+    </ul>
+    <p>
+      <label for="cashTendered">Cash Tendered:</label>
+      <span id="cashTendered"></span>
+      <span id="paymentSufficient" hidden>&check; Sufficient Payment</span>
+    </p>
+    <h2>3. Get Change</h2>
+    <p>
+      <button type="submit" id="getChangeButton">Get Change</button>
+    </p>
+    <ul id="change" hidden>
+      <li>Quarters: <span class="change-count">0</span></li>
+      <li>Dimes: <span class="change-count">0</span></li>
+      <li>Nickels: <span class="change-count">0</span></li>
+      <li>Pennies: <span class="change-count">0</span></li>
+    </ul>
+  </form>
+
+  <button type="button" id="resetButton">Reset</button>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
