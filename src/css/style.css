@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+}
+
+p {
+  color: #222;
+}
+
+label {
+  color: #222;
+  font-weight: bold;
+}
+
+#coins {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+#coins button {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border-width: 4px;
+  outline: none;
+  margin-right: 4px;
+}
+
+#coins button:focus {
+  border-color: blue;
+}
+
+#paymentSufficient {
+  font-weight: bold;
+  font-size: 120%;
+  color: forestgreen;
+  margin-left: 1em;
+}
